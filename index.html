@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>iPortfolio Bootstrap Template - Index</title>
+  <title>Michiel Kuyken</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -282,6 +281,72 @@
         </div>
         <div class="col-lg-12 col-md-12 portfolio-item filter-app row align-items-center justify-content-center">
             <div class="col-6 container" style="text-align: center">
+              <img src="sprint%202%20home%20page.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-6"> 
+                <h1>Project 4.0</h1>
+                <div class="accordion" id="accordionThree">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                        Omschrijving
+                      </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse show" data-bs-parent="#accordionThree">
+                      <div class="accordion-body">
+                        <p>Voor het vak Project 4.0 werkte ik samen met drie developers en een AI-specialist aan een project voor Forward. Met ons team, dat uit studenten met verschillende IT-achtergronden bestaat, hebben we een applicatie uitgewerkt waarmee medewerkers van de Explore Group werkplekken (zoals bureaus of stoelen) kunnen reserveren op kantoor.</p> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Persoonlijke bijdrage
+                      </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+                      <div class="accordion-body">
+                        <p>Voor dit project heb ik me vooral bezig gehouden met het CCS gedeelte, wat vooral inhield om de applicatie te hosten. Dit gebeurde op de AWS-omgeving van Forward. Ik heb hiervoor Terraform code geschreven waarmee de volledige omgeving opgezet werd. Om dit automatisch te laten gebeuren, heb ik drie pipelines geschreven. Twee van deze pipelines zorgen ervoor dat de code omgezet wordt naar een Docker-image. Deze pipelines draaide in de Gitlab-repositories voor de frontend en backend. De developers konden hier nieuwe code naar pushen en dan werd er een nieuwe Docker-image gemaakt die gehost werd. De derde pipeline zorgde ervoor dat als er een aanpassing gemaakt werd aan de Terraform-code, dat de omgeving opnieuw opgebouwd werd. Links naar deze repositories is helaas niet mogelijk, omdat enkel mensen met een schoolaccount toegang kunnen krijgen hiertoe.</p> 
+                        <p>De applicatie draait op ECS-instances die geschaald werden met Fargate. Deze instances waren bereikbaar via een Application loadbalancer, waarvan de URL omgevormd werd naar onze eigen domeinnaam. Dit zorgde voor gemakkelijke toegang voor de gebruikers. De gegevens, zoals wie welke stoel gereserveerd had, werden opgeslagen in een RDS. Door hiervan gebruik te maken, kon onze AI-specialist de gegevens makkelijk ophalen om in Sagemaker voorspellingen te maken. Voor een extra laag security, werd gevoelige data opgeslagen in een Secrets manager.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Toegapste technieken
+                      </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+                      <div class="accordion-body row">
+                      <div class="col-6">
+                      <h4>Hosting op AWS</h4>
+                       <ul>
+                           <li>VPC</li>
+                           <li>ECS op Fargate</li>
+                           <li>Application loadbalancer</li>
+                           <li>RDS</li>
+                           <li>Sagemaker</li>
+                           <li>Secrets manager</li>
+                       </ul>
+                       </div>
+                       <div class="col-6">
+                       <h4>Codebeheer</h4>
+                       <ul>
+                           <li>Java Springboot-framework</li>
+                           <li>Angular</li>
+                           <li>OpenTofu</li>
+                           <li>Github-pipelines</li>
+                       </ul>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+            </div>
+          </div>
+        <div class="col-lg-12 col-md-12 portfolio-item filter-app row align-items-center justify-content-center">
+            <div class="col-6 container" style="text-align: center">
               <img src="project%20hosting.jpg" height="400px">
             </div>
             <div class="col-6"> 
@@ -295,9 +360,8 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionOne">
                       <div class="accordion-body">
-                        <p>Dit is ons project voor Project Hosting. Voor dit project moesten we een hosting-platform maken voor de derdejaarsstudenten. Op dit platform kunnen ze hun project van Project PHP kunnen hosten.</p>
-                        <p>Vanuit onze opleiding hebben we onze eigen server-stack gekregen per team. Deze hebben we zelf moeten configureren, vooraleer we ermee aan de slag konden.</p> 
-                        <p>Dit project is momenteel nog lopende, dus ik kan helaas niets vertellen over het eindresultaat.</p>
+                        <p>Dit is ons project voor Project Hosting. Voor dit project moesten we een hosting-platform maken voor de derdejaarsstudenten. Op dit platform kunnen ze hun project van Project PHP hosten.</p>
+                        <p>Vanuit onze opleiding hebben we onze eigen server-stack gekregen per team. Deze hebben we zelf moeten configureren, vooraleer we ermee aan de slag konden. Hierna hebben we een applicatie gemaakt waarmee gebruikers applicaties konden hosten op onze server.</p> 
                       </div>
                     </div>
                   </div>
@@ -309,7 +373,9 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
                       <div class="accordion-body">
-                        <p>Dit is momenteel nog een lopend project. We hebben veel problemen ondervonden met het opzetten van onze servers, wat vooruitgang op andere vlakken hinderde. Ik heb meegeholpen met het oplossen van deze problemen, maar we hebben verder als groep nog niet veel kunnen doen.</p>
+                        <p>Voor onze applicatie, heb ik me vooral bezig gehouden met het maken van de frontend en documentatie. Dit diende als communicatiemiddel tussen de gebruiker en API. Ik heb hiervoor een template gebruikt die één van onze teamgenoten had en deze omgevormd naar onze eigen website. De code hiervoor kunt u bekijken met volgende <a href="https://github.com/ProjectHosting3/Frontend/tree/main">link</a>.</p>
+                        <p>In de documentatie heb ik controle uitgevoerd op de teksten van de rest. Ik heb spellingscontrole gedaan en logische indelingen van pagina's gemaakt. De algemene teksten, zoals het voorwoord, inleiding, slot en bibliografie, heb ik allemaal geschreven en laten controleren door mijn team.</p>
+                        <p>Doorheen het jaar heb ik mijn team ook ondersteund met het configureren van onze server-stack. Ik kende hier het minste van, dus heb ik vooral veel kunnen bijleren door mijn teamgenoten en heb ik zelf geprobeerd om te helpen waar ik kon.</p>
                       </div>
                     </div>
                   </div>
@@ -338,7 +404,6 @@
                            <li>NodeJS API</li>
                            <li>Ticket System</li>
                            <li>FTP server</li>
-                           <li>Wazuh</li>
                        </ul>
                        </div>
                       </div>
@@ -417,64 +482,7 @@
           </div>
           <div class="col-lg-12 col-md-12 portfolio-item filter-app row align-items-center justify-content-center">
             <div class="col-6 container" style="text-align: center">
-              <img src="api.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-6"> 
-                <h1>Website dierentuin</h1>
-                <div class="accordion" id="accordionThree">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-                        Omschrijving
-                      </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse show" data-bs-parent="#accordionThree">
-                      <div class="accordion-body">
-                        <p>Voor het vak API development kregen we de opdracht om een api te maken over een eigen gekozen onderwerp. Mijn vriendin en ik gaan graag naar dierentuinen dus besloot ik mijn project hierrond te maken. Ik heb gekozen om het te basseren op de dierentuin "Planckendael" en heb met behulp van mijn api een website voor de dierentuin gemaakt.</p> 
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        Werking
-                      </button>
-                    </h2>
-                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
-                      <div class="accordion-body">
-                        <p>Mijn website is gebouwd aan de hand van een zelfgeschreven API. Deze API heb ik geschreven in Python met FastAPI. De API is gelinkt aan een database, waarin de verschillende tabellen zitten die ik ga gebruiken. </p>
-                        <p>De inhoud van de tabellen worden opgeroepen in de website aan de hand van JavaScript code. Deze code zorgt ervoor dat zowel de inhoud getoond wordt, en dat er nieuwe elementen naar de database geschreven kunnen worden.</p>
-                        <p>Met deze <a href="https://github.com/MichielKuyken/api_dierentuin" target="_blank">link</a> kunt u mijn github zien waarin alle code van de API staat.</p>
-                        <p>En met deze <a href="https://github.com/MichielKuyken/dierentuin_website" target="_blank">link</a> kunt u mijn github zien waarin alle code van de website staat.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        Toegapste technieken
-                      </button>
-                    </h2>
-                    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
-                      <div class="accordion-body row">
-                      <div>
-                       <ul>
-                           <li>Python: FastAPI</li>
-                           <li>HTML</li>
-                           <li>CSS</li>
-                           <li>JavaScript: Alpine</li>
-                           <li>Hosting op Netlify</li>
-                       </ul>
-                       </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-            </div>
-          </div>
-          <div class="col-lg-12 col-md-12 portfolio-item filter-app row align-items-center justify-content-center">
-            <div class="col-6 container" style="text-align: center">
-              <img src="Inchecksysteem.jpg" height="400px">
+              <img src="muizenval.jpg" height="400px">
             </div>
             <div class="col-6"> 
                 <h1>Muizenval</h1>
@@ -499,7 +507,7 @@
                     </h2>
                     <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFour">
                       <div class="accordion-body">
-                        <p>De componenten van de muizenval worden aangestuurd door een Orane Pi. Op deze Pi staat de code die geschreven is in Python.</p>
+                        <p>De componenten van de muizenval worden aangestuurd door een Orange Pi. Op deze Pi staat de code die geschreven is in Python.</p>
                         <p>Wanneer de muizenval geactiveerd is, begint de ultrasone sensor te werken. Deze meet de afstand tot de ingang van de val, en detecteert dus wanneer er iets binnenkomt. Wanneer dit gebeurt schiet de steppermotor in actie. Deze trekt aan een touwtje waardoor de val dichtklapt. De muis is nu gevangen.</p>
                         <p>Er is ook een LCD-scherm verbonden waarop extra informatie te zien is. Zo kun je bijvoorbeeld kijken hoelaat het is en hoe vaak de muizenval al getriggered is. Er staat ook bij of de muizenval momentaal aan of uit staat.</p>
                         <p>Tenslotte zijn er nog 2 knoppen die de muizenval uit kunnen zetten of resetten. De deur moet enkel terug geopend worden en de val is terug actief.</p>
